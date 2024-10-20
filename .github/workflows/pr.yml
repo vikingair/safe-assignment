@@ -16,4 +16,6 @@ jobs:
       - name: Type Checking
         run: deno check .
       - name: Test
-        run: deno test
+        run: deno test --coverage
+      - name: Coverage Results
+        run: deno coverage
