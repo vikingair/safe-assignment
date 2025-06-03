@@ -13,4 +13,5 @@ jobs:
       id-token: write # The OIDC ID token is used for authentication with JSR.
     steps:
       - uses: actions/checkout@v4
+      # using npx instead of deno, since it is natively available in CI
       - run: npx jsr publish
